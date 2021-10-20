@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Better Coder- Massivefile.com</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- highlight.js -->
+    
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+  
+
+    <div id="container">
+
+      <div style="padding:40px 20px;color:black;opacity:1;background-color:orange;font-size:25px">
+       <center> <small>massivefile.com</small>- Best of Basics</center>
+      </div>
+      
+      <section class="type var">
+          <center><small>This is a most basic and intuitive explanation so that a kid can understand it :)</small></center><br><br>
+          <header>
+          I need to remember something for later
+        </header>
+        Use a <a href="#">variable</a>.
+        <pre><code class="js">
+  var a = "To be or not to be"
+  var b = 100
+  var c = false
+        </code></pre>
+      </section>
+
+
+      <section class="type if">
+        <header>
+          I need to make a decision
+        </header>
+        Use an <a href="#">if/else conditional statement</a>
+        <pre><code class="js">
+  if (menuOpen==false) {
+    // open the menu
+  } else {
+    // close the menu
+  }
+        </code></pre>
+        or
+
+        <pre><code class="js">
+  if (x <= 100) {
+    // do something
+  } else {
+    // so something else
+  }
+        </code></pre>
+      </section>
+
+
+      <section class="type style">
+        <header>
+          I need to change what my page looks like
+        </header>
+        Use the <a href="#">style</a> property
+        <br><br>HTML:
+        <pre><code class="html">
+  &lt;div id="title"&gt;&lt;/div&gt;
+        </code></pre>
+        JavaScript:
+        <pre><code class="js">
+  var t = document.getElementById("title")
+
+  t.style.color = "#00aaff"
+  t.style.border = "#solid 2px #0af"
+  t.style.backgroundColor = "#eeeeee"
+        </code></pre>
+      </section>
+
+
+      <section class="type func">
+        <header>
+          I need to save an action so I can do it later
+        </header>
+        Use a <a href="#">function</a>
+        <pre><code class="js">
+  function changeBG() {
+
+
+  }
+
+
+  // later, you can execute it
+  changeBG()
+        </code></pre>
+      </section>
+
+      <section class="type arg">
+        <header>
+          I need my action to happen a little bit differently each time
+        </header>
+        Use a <a href="#">function with an argument</a>
+        <pre><code class="js">
+  function changeBG(color) {
+
+    // color will contain your argument
+
+  }
+
+  // later, you can execute it
+  changeBG("black")
+  changeBG("white")
+
+        </code></pre>
+      </section>
+
+
+      <section class="type el">
+        <header>
+          I need to add something to my page
+        </header>
+        Use <a href="#">document.createElement</a> and <a href="#">document.appendChild</a>
+        <pre><code class="js">
+  var t = document.createElement("div")
+  t.innerHTML = "Lorem Ipsum"
+
+  var parenttobe = document.getElementById("title")
+  parenttobe.appendChild(t)
+        </code></pre>
+      </section>
+
+
+      <div class="subtitle">
+        More Advanced
+      </div>
+
+      <section class="type array">
+        <header>
+          I need to remember a lot of things that are related somehow
+        </header>
+        Use an <a href="#">array</a>
+        <pre><code class="js">
+  var groceries = [ "milk", "eggs", "bread" ]
+
+  groceries[0] // returns "milk"
+        </code></pre>
+
+      or use an <a href="#">object</a>
+        <pre><code class="js">
+  var groceries = {
+
+    milk: "1 gallon",
+    eggs: "1 dozen",
+    bread: "1 loaf"
+
+  }
+
+  groceries.milk // returns "1 gallon"
+        </code></pre>
+      </section>
+
+
+      <section class="type for">
+        <header>
+          I need to do something several times
+        </header>
+        Use a <a href="#">loop</a>
+        <pre><code class="js">
+  for (var i=0;i&lt;100;i++) {
+    //the code in here will happen 100 times
+  }
+        </code></pre>
+      </section>
+
+
+      <section class="type event">
+        <header>
+          I need to make my site interactive
+        </header>
+        Use an <a href="#">event listener</a>
+        <br><br>HTML:
+        <pre><code class="html">
+  &lt;div id="title"&gt;&lt;/div&gt;
+        </code></pre>
+        JavaScript:
+        <pre><code class="js">
+  var t = document.getElementById("title")
+
+  t.addEventListener("click", function(event) {
+    //do something in here
+    //a ton of info is provided in the 'event' argument
+  })
+        </code></pre>
+      </section>
+
+
+      <div class="subtitle">
+        Examples
+      </div>
+
+    </div>
+
+    <div class="container2">
+      <header style="padding:40px 20px;color:black;opacity:0.9;background-color:orange;font-size:20px;">
+        <center>Example 1 - Toggle</center>
+      </header>
+      <section class="half">
+
+        <div class="example var">
+          I need to remember something
+        </div>
+        <div class="example func">
+          I need to save an action for later
+          <div class="example if">
+            I need to make a decision
+            <div class="example style">
+              I need to change what my site looks like
+            </div>
+          </div>
+        </div>
+        <div class="example event">
+          I need to make my site interactive
+        </div>
+
+      </section>
+      <section class="half">
+
+        <div class="example mycode var">
+          var on = false;
+        </div>
+        <div class="example mycode func">
+          function toggleIt() {
+          <div class="example mycode if">
+            if (on==false) {
+            <div class="example mycode style">
+              var d = document.getElementById("mytoggle")
+              <br>d.style.backgroundColor = "#0af"
+              <br>on = true
+            </div>
+            } else {
+            <div class="example mycode style">
+              var d = document.getElementById("mytoggle")
+              <br>d.style.backgroundColor = "#fff"
+              <br>on = false
+            </div>
+            }
+          </div>
+          }
+        </div>
+        <div class="example mycode event">
+          var d = document.getElementById("mytoggle")
+          d.addEventListener("click",toggleIt)
+        </div>
+      </section>
+      <br>
+      <a href="https://jsfiddle.net/karan36k/fapxk1vL/1/" style="padding:40px 20px;color:black;opacity:0.9;background-color:orange;font-size:20px" target="_blank">Click Here to See The Result</a>
+    </div>
+
+
+    <div class="container2">
+      <header style="padding:40px 20px;color:black;opacity:0.9;background-color:orange;font-size:20px;">
+        <center>Example 2 - Static Menu</center>
+      </header>
+      <section class="half">
+
+        <div class="example array">
+          I need to remember a list of related items
+        </div>
+        <div class="example for">
+          I need do something several times
+          <div class="example el">
+            I need to add something to my site
+          </div>
+        </div>
+
+      </section>
+      <section class="half">
+
+        <div class="example mycode array">
+          var items = [ 
+          <br>&nbsp; "Sign in", 
+          <br>&nbsp; "My account", 
+          <br>&nbsp; "Something else", 
+          <br>&nbsp; "Log out" 
+          <br>]
+        </div>
+        <div class="example mycode for">
+          for (var i=0;i&lt;items.length;i++) {
+          <div class="example mycode el">
+            var newItem = document.createElement("div")
+            <br>newItem.innerHTML = items[i]
+            <br>
+            <br>var container = document.getElementById("menu")
+            <br>container.appendChild(newItem)
+          </div>
+          }
+        </div>
+
+      </section>
+      <br>
+      <div >
+     <a href="https://jsfiddle.net/karan36k/v1bewLj0/1/" style="padding:40px 20px;color:black;opacity:0.9;background-color:orange;font-size:20px" target="_blank">Click Here to See The Result</a>
+    </div>
+
+
+
+
+    <div class="container2">
+      <div class="container2">
+      <header style="padding:40px 20px;color:black;opacity:0.9;background-color:orange;font-size:20px;">
+        <center>HTML Paintbrush</center>
+      </header>
+      <section class="half">
+
+        <div class="example event">
+          I need to make my site interactive
+          <div class="example el">
+            I need to add something to my site
+          </div>
+          <div class="example style">
+            I need to change what my site looks like
+          </div>
+        </div>
+
+      </section>
+      <section class="half">
+
+        <div class="example mycode event">
+          document.body.addEventListener("mousemove", function(e) {
+          <div class="example mycode el">
+            var d = document.createElement("div")
+            <div class="example mycode style">
+              d.style.width = "3px"
+              <br>d.style.height = "3px"
+              <br>d.style.backgroundColor = "lime"
+              <br>d.style.opacity = 0.7
+              <br>d.style.position = "absolute"
+              <br>d.style.top = e.clientY + "px"
+              <br>d.style.left = e.clientX + "px"
+            </div>
+            document.body.appendChild(d)
+          </div>
+          })
+        </div>
+
+      </section>
+      <div>
+      <a href="https://jsfiddle.net/karan36k/n1uxzdev/3/" style="padding:40px 20px;color:black;opacity:0.9;background-color:orange;font-size:20px" target="_blank">Click Here to See The Result</a>
+    </div>
+
+    </div>
+
+
+
+<div style="padding:40px 20px;color:white;opacity:0.9;background-color:#888;font-size:25px">
+      Remember, there are a dozen ways to code any given idea. It is always easier to understand your own code than to read someone else's. Steal the essentials and go forth to be creative!
+</div>
+      
+  </body>
+</html>
